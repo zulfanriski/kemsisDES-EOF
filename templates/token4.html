@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated JWT</title>
+</head>
+<body>
+    <h1>Generated JWT</h1>
+    <p>Your JWT access token:</p>
+    <textarea rows="5" cols="50" readonly>{{ token }}</textarea>
+    <!-- <p>{{ token }}</p> -->
+    <p></p>
+    <li><a href="{{ url_for('download_file', filename=file_path) }}">Download Image 1</a></li>
+    <!-- <a href="{{ file_path }}">Download Image</a> -->
+</body>
+</html>

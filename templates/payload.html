@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>JWT Payload Viewer</title>
+</head>
+<body>
+    <h1>JWT Payload Viewer</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li class="{{ message}}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <form method="POST">
+        <p>
+            <label for="token">JWT Token:</label>
+            <input type="text" name="token" id="token">
+        </p>
+        <p>
+            <input type="submit" value="Show Payload">
+        </p>
+    </form>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JWT Payload Viewer</title>
+</head>
+<body>
+    <h1>Selamat Datang {{ username }}</h1>
+    <h2>Poin Anda adalah {{ data }}</h2>
+    <h3>Berlaku hingga {{ batas_waktu }}</h3>
+    <h1>JWT Payload Viewer</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="messages">
+                <!-- <p>{{message}}</p> -->
+                {% for message in messages %}
+                    <li class="{{ message}}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
